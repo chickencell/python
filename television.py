@@ -26,7 +26,7 @@ class Television:
         """
         if self.__status == False:
             self.__status = True
-        else:
+        elif self.__status == True:
             self.__status = False
 
     def mute(self) -> None:
