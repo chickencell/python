@@ -21,6 +21,7 @@ class Television:
         """
 
         Toggle the power status of the television.
+        :return: Power status
 
         """
         if self.__status == False:
@@ -32,6 +33,7 @@ class Television:
         """
 
         Toggle the mute status of the television if it is powered on.
+        :return: Mute status
 
         """
         if self.__status:
@@ -44,6 +46,7 @@ class Television:
         """
 
         Increase the channel by 1, wrapping around if at the maximum channel.
+        :return: Channel number up by 1
 
         """
         if self.__status:
@@ -58,6 +61,7 @@ class Television:
         """
 
         Decrease the channel by 1, wrapping around if at the minimum channel.
+        :return: Channel number down by 1
 
         """
         if self.__status:
@@ -72,6 +76,7 @@ class Television:
         """
 
         Increase the volume by 1 if the television is powered on, and unmute if muted.
+        :return: Volume number up by 1
 
         """
         if self.__status:
@@ -83,6 +88,7 @@ class Television:
         """
 
         Decrease the volume by 1 if the television is powered on, and unmute if muted.
+        :return: Volume number down by 1
 
         """
 
@@ -95,6 +101,7 @@ class Television:
         """
 
         Return a string representation of the television's current status.
+        :return: String of the power, channel, and volume status
 
         """
 
